@@ -23,6 +23,22 @@
   color: #61dafb;
 }
 
+.conditional-container {
+  margin-left: 15px;
+  padding: 15px;
+  padding-bottom: 0px;
+  border: 1px solid gray;
+  min-width: 800px;
+  width: min-content;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.conditional-container:hover>ul.actions {
+  visibility: visible;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,4 +46,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+select, input {
+   /* -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none; */
+   font-size: 16px;
+   padding-left: 4px;
+}
+
+.basic-container select {
+  z-index: 1;
+}
+
+.swap-container {
+  visibility: hidden;
+  position: absolute;
+  right:50px;
+  top: 0px;
+  width: 23px;
+  transform: translateX(150%);
+}
+
+.item-wrapper {
+  height: 100px;
+  width: 50px;
+  top: 0px;
+  left: 100%;
+  position: absolute;
+}
+
+/* .item-wrapper {
+  width: 100%;
+} */
+
+.basic-container, .conditional-container {
+  margin-right: 20px;
+}
+
+.basic-container:hover .swap-container, .item-wrapper:hover .swap-container {
+  visibility: visible;
+}
+
+.basic-container:hover .swap-container, .item-wrapper:hover .swap-container {
+  visibility: visible;
+}
+
+.swap-container li:hover {
+  cursor: pointer;
+  color: pink;
+}
+
+.swap-container ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.single-condition input {
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  width: max-content;
+  padding: 0px;
+}
+ul.actions {
+  visibility:hidden;
+}
+
+.single-condition:hover .remove-single-condition {
+  visibility: visible;
+}
+
+.remove-single-condition {
+  margin-left: 10px;
+  visibility: hidden;
+}
+
+.basic-container {
+  position: relative;
+  margin-bottom: 20px;
+  background: lightgray;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 800px;
+}
+
+.basic-container:hover ul.actions {
+  visibility: visible;
 }
