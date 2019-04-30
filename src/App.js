@@ -144,7 +144,10 @@ class App extends Component {
 
   onAddQuestion(indices) {
     const [children, index] = this.getSiblingArray(indices);
-    var newChild = JSON.parse(JSON.stringify(this.state.dataTypes[0], null, 4))
+    const newChild = {
+        "data_type_id": this.state.dataTypes[0]["data_type_id"]
+    }
+
     this.getChildArray(children[index]).splice(0, 0, newChild)
 
     this.setState({
