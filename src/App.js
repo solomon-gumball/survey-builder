@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
-import test from './test'
+// import test from './test'
+import test from './test-subscription'
 import DataType from './DataType'
 
 class App extends Component {
@@ -14,12 +15,18 @@ class App extends Component {
 
   loadFromJSON(json, silent) {
     this.state = {
-      dataTypes: json.data_types,
-      data_type_map: json.data_type_map,
-      title: json.title,
+      dataTypes: json.data[0]["organization_observation_target_lists"].reduce(
+        (acc, list) => {
+          acc.push.apply(acc, list.data_types)
+          return acc
+        },
+        []
+      ),
+      data_type_map: json._metadata.data_types,
+      title: json.data[0].title,
       lastUpdatedIndices: [],
       _json: json,
-      data_type_id_list: Object.keys(json.data_type_map).map(x => parseInt(x))
+      data_type_id_list: Object.keys(json._metadata.data_types).map(x => parseInt(x))
     }
 
     if (!silent) {
@@ -36,7 +43,20 @@ class App extends Component {
           <input placeholder="json here" ref={(t) => {this.inputEl = t}}></input>
           <button onClick={() => this.loadFromJSON(JSON.parse(this.inputEl.value), false)}>yep</button>
           <button onClick={() => {
-            copyToClipboard(JSON.stringify({ ..._json, data_types: dataTypes }, null, 4))
+            const obsTargetList = {
+              ..._json.data[0]["organization_observation_target_lists"],
+              data_types: this.state.dataTypes
+            }
+
+            copyToClipboard(JSON.stringify({
+              ..._json,
+              data: [{
+                ..._json.data[0],
+                organization_observation_target_lists: [
+                  obsTargetList
+                ]
+              }]
+            }, null, 4))
           }}>
             export to clipboard
           </button>
@@ -124,7 +144,7 @@ class App extends Component {
 
   onAddQuestion(indices) {
     const [children, index] = this.getSiblingArray(indices);
-    var newChild = this.state.dataTypes[0]
+    var newChild = JSON.parse(JSON.stringify(this.state.dataTypes[0], null, 4))
     this.getChildArray(children[index]).splice(0, 0, newChild)
 
     this.setState({

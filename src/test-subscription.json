@@ -1,0 +1,344 @@
+{
+    "gw_api_response": [],
+    "_metadata": {
+        "data_types": {
+            "45425": {
+                "questions": {
+                    "data_boundary_flexible": false,
+                    "question_text": " Please take a clear and well framed photo of {title}.",
+                    "propositions": [],
+                    "question_type": "PHOTO"
+                },
+                "time_estimate": -1,
+                "id": 45425,
+                "value_type": "PHOTO",
+                "is_required": true,
+                "description": "Storefront Photo",
+                "global_data_type_id": 24884,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45426": {
+                "questions": {
+                    "question_text": "Take a clear and well-framed photo of the interior of the store, taken from near the front doors as soon as you walk in.",
+                    "propositions": [],
+                    "question_type": "PHOTO"
+                },
+                "time_estimate": null,
+                "id": 45426,
+                "value_type": "PHOTO",
+                "is_required": true,
+                "description": "Interior Photo",
+                "global_data_type_id": 36096,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45427": {
+                "questions": {
+                    "question_text": "Ask a store employee to locate a 20% off coupon for the product.",
+                    "propositions": [],
+                    "question_type": "CHECK"
+                },
+                "time_estimate": null,
+                "id": 45427,
+                "value_type": "HINT",
+                "is_required": false,
+                "description": "Ask Store Employee",
+                "global_data_type_id": 36095,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45428": {
+                "questions": {
+                    "question_text": "Was the store employee able to locate a coupon for the product?",
+                    "propositions": [
+                        "Yes",
+                        "No"
+                    ],
+                    "question_type": "MULTIPLE_CHOICE"
+                },
+                "time_estimate": null,
+                "id": 45428,
+                "value_type": "MULTIPLE_CHOICE",
+                "is_required": true,
+                "description": "Coupon present",
+                "global_data_type_id": 36098,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45429": {
+                "questions": {
+                    "question_text": "Take a clear and well-framed photo of the whole table or shelf the coupon was located on.",
+                    "propositions": [],
+                    "question_type": "PHOTO"
+                },
+                "time_estimate": null,
+                "id": 45429,
+                "value_type": "PHOTO",
+                "is_required": false,
+                "description": "Coupon ",
+                "global_data_type_id": 36097,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45430": {
+                "questions": {
+                    "question_text": "Add any additional notes about your visit to the store and interaction with the store employee.",
+                    "propositions": [],
+                    "question_type": "FREE_TEXT"
+                },
+                "time_estimate": null,
+                "id": 45430,
+                "value_type": "FREE_TEXT",
+                "is_required": false,
+                "description": "Additional Notes",
+                "global_data_type_id": 36099,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            }
+        }
+    },
+    "errors": null,
+    "_meta": {
+        "data_types": {
+            "45425": {
+                "questions": {
+                    "data_boundary_flexible": false,
+                    "question_text": " Please take a clear and well framed photo of {title}.",
+                    "propositions": [],
+                    "question_type": "PHOTO"
+                },
+                "time_estimate": -1,
+                "id": 45425,
+                "value_type": "PHOTO",
+                "is_required": true,
+                "description": "Storefront Photo",
+                "global_data_type_id": 24884,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45426": {
+                "questions": {
+                    "question_text": "Take a clear and well-framed photo of the interior of the store, taken from near the front doors as soon as you walk in.",
+                    "propositions": [],
+                    "question_type": "PHOTO"
+                },
+                "time_estimate": null,
+                "id": 45426,
+                "value_type": "PHOTO",
+                "is_required": true,
+                "description": "Interior Photo",
+                "global_data_type_id": 36096,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45427": {
+                "questions": {
+                    "question_text": "Ask a store employee to locate a 20% off coupon for the product.",
+                    "propositions": [],
+                    "question_type": "CHECK"
+                },
+                "time_estimate": null,
+                "id": 45427,
+                "value_type": "HINT",
+                "is_required": false,
+                "description": "Ask Store Employee",
+                "global_data_type_id": 36095,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45428": {
+                "questions": {
+                    "question_text": "Was the store employee able to locate a coupon for the product?",
+                    "propositions": [
+                        "Yes",
+                        "No"
+                    ],
+                    "question_type": "MULTIPLE_CHOICE"
+                },
+                "time_estimate": null,
+                "id": 45428,
+                "value_type": "MULTIPLE_CHOICE",
+                "is_required": true,
+                "description": "Coupon present",
+                "global_data_type_id": 36098,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45429": {
+                "questions": {
+                    "question_text": "Take a clear and well-framed photo of the whole table or shelf the coupon was located on.",
+                    "propositions": [],
+                    "question_type": "PHOTO"
+                },
+                "time_estimate": null,
+                "id": 45429,
+                "value_type": "PHOTO",
+                "is_required": false,
+                "description": "Coupon ",
+                "global_data_type_id": 36097,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            },
+            "45430": {
+                "questions": {
+                    "question_text": "Add any additional notes about your visit to the store and interaction with the store employee.",
+                    "propositions": [],
+                    "question_type": "FREE_TEXT"
+                },
+                "time_estimate": null,
+                "id": 45430,
+                "value_type": "FREE_TEXT",
+                "is_required": false,
+                "description": "Additional Notes",
+                "global_data_type_id": 36099,
+                "attachments": null,
+                "status": "ACTIVE",
+                "observation_target_type_id": null,
+                "expected_value_expression": null
+            }
+        }
+    },
+    "code": 200,
+    "data": [
+        {
+            "groups": [
+                1801
+            ],
+            "created_customer": {
+                "first_name": "Joseph",
+                "id": 892455,
+                "last_name": "Sample"
+            },
+            "date_created": "2019-04-30 17:47:33",
+            "frequency_amount": null,
+            "location_override": false,
+            "title": "Mystery Shopper Gig",
+            "organization_location_lists": [
+                659174
+            ],
+            "wave": {
+                "total_locations": 1,
+                "end_date": "2019-05-11 21:00:00",
+                "start_date": "2019-04-30 04:47:00",
+                "id": "5cc88a35de52b6000d95d4d9",
+                "execution": 0
+            },
+            "dashboard_visible": true,
+            "version_id": 16,
+            "organization_data": {
+                "certifications": []
+            },
+            "autoassign": false,
+            "archive_s3_url": null,
+            "optin_type": "SIMPLE_OPTIN",
+            "bundle_autoassign": false,
+            "needs_public_workforce": false,
+            "res_window_hours": "3,12,24",
+            "date_updated": "2019-04-30 17:48:18",
+            "submit_deadline": null,
+            "created_customer_id": 892455,
+            "frequency_byweekday": null,
+            "needs_approval": false,
+            "certifications": [],
+            "tickets_target": null,
+            "min_gig_price": null,
+            "two_way_rating_enabled": false,
+            "recurrence": null,
+            "organization_observation_target_lists": [
+                {
+                    "observation_target_list_id": 1588587,
+                    "data_types": [
+                        {
+                            "data_type_id": 45425
+                        }
+                    ]
+                },
+                {
+                    "observation_target_list_id": 1588588,
+                    "data_types": [
+                        {
+                            "data_type_id": 45426
+                        }
+                    ]
+                },
+                {
+                    "observation_target_list_id": 1588589,
+                    "data_types": [
+                        {
+                            "data_type_id": 45427
+                        }
+                    ]
+                },
+                {
+                    "observation_target_list_id": 1588590,
+                    "data_types": [
+                        {
+                            "data_type_id": 45428
+                        }
+                    ]
+                },
+                {
+                    "observation_target_list_id": 1588591,
+                    "data_types": [
+                        {
+                            "data_type_id": 45429
+                        }
+                    ]
+                },
+                {
+                    "observation_target_list_id": 1588592,
+                    "data_types": [
+                        {
+                            "data_type_id": 45430
+                        }
+                    ]
+                }
+            ],
+            "all_customers": false,
+            "frequency_window": null,
+            "project_fund": 0,
+            "near_ticket_distance": 1,
+            "frequency_type": null,
+            "needs_core": false,
+            "is_double_optin": false,
+            "rating_email": "joseph+beta_org_sa@gigwalk.com",
+            "end_date": "2019-05-11 21:00:00",
+            "customers": [],
+            "id": 687093,
+            "tags": [],
+            "start_date": "2019-04-30 04:47:00",
+            "description": "<p><u><strong>Description:</strong></u> For this gig you will be going to the store address that is listed, looking for a product in a specific section, answering a few questions and taking photos.</p>\n<p><u><strong>Gig Details</strong></u> - Please complete the following:</p>\n<p>- Take a clear and well-framed photo of the storefront</p>\n<p>- Take a clear and well-framed photo of the interior of the store</p>\n<p>- Ask a store employee to locate a 20% off promotion of the product</p>\n<p>- If the promotion is located on a table, take a clear and well-framed photo of the whole table, making sure books are clearly visible</p>\n<p>- If the promotion is located on a shelf, take a clear and well-framed photo of the shelf, making sure the books are clearly visible</p>\n<p><strong>Please Note: </strong>As a reminder, please always be professional when visiting your assigned location. &nbsp;This gig must be completed during business hours.</p>",
+            "tickets_paused": false,
+            "ticket_time_estimate": 1800,
+            "worker_count": 1,
+            "can_reschedule": true,
+            "tickets_overage": null,
+            "state": "DRAFT",
+            "schedule_type": "ASAP"
+        }
+    ],
+    "warnings": null
+}
