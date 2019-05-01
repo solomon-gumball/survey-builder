@@ -125,7 +125,9 @@ class App extends Component {
 
     [children[firstIndex], children[secondIndex]] = [children[secondIndex], children[firstIndex]]
 
+    // Update starting at parent
     indices.pop()
+
     this.setState({
       dataTypes: this.state.dataTypes.slice(),
       lastUpdatedIndices: indices
@@ -161,6 +163,7 @@ class App extends Component {
     const [children, index] = this.getSiblingArray(indices);
 
     this.getChildArray(children[index]).splice(0, 0, newChild)
+
     this.setState({
       dataTypes: this.state.dataTypes.slice(),
       lastUpdatedIndices: indices
@@ -169,7 +172,10 @@ class App extends Component {
 
   onDelete(indices) {
     const [children, index] = this.getSiblingArray(indices);
-    delete children[index]
+    children.splice(index, 1)
+
+    // Update starting at parent
+    indices.pop()
 
     this.setState({
       lastUpdatedIndices: indices,

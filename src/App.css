@@ -125,6 +125,10 @@ ul.actions {
   visibility:hidden;
 }
 
+ul.actions a {
+  cursor: pointer;
+}
+
 .single-condition:hover .remove-single-condition {
   visibility: visible;
 }
