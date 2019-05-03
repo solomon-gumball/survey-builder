@@ -44,7 +44,6 @@ class App extends Component {
           <button onClick={() => this.loadFromJSON(JSON.parse(this.inputEl.value), false)}>yep</button>
           <button onClick={() => {
             const obsTargetList = {
-              ..._json.data[0]["organization_observation_target_lists"][0],
               data_types: this.state.dataTypes
             }
 

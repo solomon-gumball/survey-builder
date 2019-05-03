@@ -108,7 +108,7 @@ export default class DataType extends Component {
 
             <ActionBar {...actions} isQuestion={true}/>
             <select value={data_type_id} onChange={(event) => {
-              props.data.data_type_id = event.target.value;
+              props.data.data_type_id = parseInt(event.target.value);
               actions.onUpdate([], props.data);
             }}>
               {data_type_id_list.map((id, i) => (
