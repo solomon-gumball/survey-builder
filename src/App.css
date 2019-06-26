@@ -58,6 +58,7 @@ select, input {
 
 .basic-container select {
   z-index: 1;
+  max-width: 300px;
 }
 
 .swap-container {

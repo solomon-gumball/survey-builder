@@ -154,6 +154,10 @@ function ConditionSelect({ value, onUpdate }) {
     <select value={value} onChange={onUpdate}>
       <option label="equals" value={"$eq"}></option>
       <option label="does not equal" value={"$ne"}></option>
+      <option label="greater than" value={"$gt"}></option>
+      <option label="greater than or equal to" value={"$gte"}></option>
+      <option label="less than" value={"$lt"}></option>
+      <option label="less than or equal to" value={"$lte"}></option>
     </select>
   )
 }
